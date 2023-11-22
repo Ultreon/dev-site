@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bubble Blaster changelog</title>
+    <link rel="stylesheet" href="https://unpkg.com/keyboard-css@1.2.2/dist/css/main.min.css" />
+    <style media="screen">
+      * {
+        font-family: sans-serif;
+      }
+      body {
+        max-width: 512px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        background: white;
+        padding: 24px 24px;
+        margin: 32px;
+        user-select: none;
+        box-shadow:
+          0px 1.4px 5.5px rgba(0, 0, 0, 0.056),
+          0px 3.3px 13.3px rgba(0, 0, 0, 0.081),
+          0px 6.3px 25px rgba(0, 0, 0, 0.1),
+          0px 11.2px 44.7px rgba(0, 0, 0, 0.119),
+          0px 20.9px 83.6px rgba(0, 0, 0, 0.144),
+          0px 50px 200px rgba(0, 0, 0, 0.2)
+        ;
+        max-height: 80%;
+        /* overflow-x: scroll;
+        overflow-y: scroll !important; */
+        min-height: 0%;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      td p {
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+      html {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: #567;
+        -webkit-overflow-scrolling: touch;
+        /* overflow: hidden; */
+      }
+      p {
+        width: 100%;
+      }
+      .badge {
+        padding: 3px 6px;
+        border-radius: 4px;
+        font-size: 11px;
+        height: 0%;
+      }
+      .badge.new {
+        color: white;
+        background: #008900;
+        content: "NEW"
+      }
+      .badge.fix {
+        color: white;
+        background: #37c;
+        content: "FIX"
+      }
+      .badge.change {
+        color: white;
+        background: #999;
+        content: "CHANGE"
+      }
+      .badge.removed {
+        color: white;
+        background: #f80;
+        content: "REMOVED"
+      }
+      .badge.security-fix{
+        color: white;
+        background: #f00;;
+        content: "SECURITY FIX"
+      }
+      .badge.initial {
+        color: #555;
+        background: #ddd;
+        content: "initial"
+      }
+      .log-item:before {
+        height: 1px;
+        width: 100%;
+        background: #bbb;
+      }
+      h1,h2,h3,h4,h4,h5,h6 {
+        width: 100%;
+      }
+      td:nth-child(1) {
+        width: 72px;
+      }
+      table {
+        width: 100%;
+      }
+
+      /* custom scrollbar */
+      ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 20px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #d6dee1;
+        border-radius: 20px;
+        border: 6px solid transparent;
+        -webkit-background-clip: content-box;
+        background-clip: content-box;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #a8bbbf;
+        background-color: #a8bbbfaa;
+      }
+
+      :root {
+        /*Set up custom properties for colours so we can switch them in dark mode*/
+        --kbd-color-background: var(--color-background-primary);
+        /* These interpolated variables reference a SCSS map of HSL-based greys*/
+        --kbd-color-border:     #{color(grey, 80)};
+        --kbd-color-text:       var(--color-text-primary);
+
+      }
+
+      /* In dark mode, a straight-up inversion doesn’t work for */
+      /* the “physical” key look so they need to be adjusted */
+      /* @media (prefers-color-scheme: dark)
+      kbd {
+          --kbd-color-background: #898b90;
+          --kbd-color-border: #3d3e42;
+          --kbd-color-text: #222325;
+      } */
+      kbd:active {
+          box-shadow: 0 1px 0 0.5px var(--kbd-color-border);
+          top: 1px;
+      }
+      kbd {
+          --kbd-color-background: var(--color-background-primary);
+          --kbd-color-border: #cbcccd;
+          --kbd-color-text: var(--color-text-primary);
+          background-color: var(--kbd-color-background);
+          border-radius: 0.25rem;
+          border: 1px solid var(--kbd-color-border);
+          box-shadow: 0 2px 0 1px var(--kbd-color-border);
+          color: var(--kbd-color-text);
+          cursor: default;
+          display: inline-block;
+          font-family: var(--font-family-sans-serif);
+          font-size: 0.875em;
+          line-height: 1;
+          min-width: 0.75rem;
+          padding: 2px 5px;
+          position: relative;
+          text-align: center;
+          top: -1px;
+          user-select: none;
+      }
+    </style>
+  </head>
+  <body oncontextmenu="return false;">
+    <h1>Ultreon Games Changelog</h1>
+    <p><i>Main news!!! 🗞️</i></p>
+    <h2 class="log-item">
+      Version 0.1.0+lorem.4
+    </h2>
+    <table>
+      <tr>
+        <td> <span class="badge new">NEW</span></td>
+        <td><p>Test test</p></td>
+      </tr>
+      <tr>
+        <td> <span class="badge new">NEW</span></td>
+        <td><p>Lorem ipsum</p></td>
+      </tr>
+      <tr>
+        <td> <span class="badge change">CHANGE</span></td>
+        <td><p>Changed some stuff around</p></td>
+      </tr>
+      <tr>
+        <td> <span class="badge removed">REMOVED</span></td>
+        <td><p>Removed useless feature</p></td>
+      </tr>
+    </table>
+    <h2 class="log-item">
+      Version 0.1.0+lorem.3
+    </h2>
+    <table>
+      <tr>
+        <td> <span class="badge new">NEW</span></td>
+        <td><p>New feature with keybind <kbd>F3</kbd></p></td>
+      </tr>
+      <tr>
+        <td> <span class="badge fix">FIX</span></td>
+        <td><p>Fixed a bug 🪲</p></td>
+      </tr>
+      <tr>
+        <td> <span class="badge security-fix">SECURITY</span></td>
+        <td><p>Fixed vulnerability 🛡️</p></td>
+      </tr>
+    </table>
+    <h2 class="log-item">
+      Version 0.1.0+lorem.2
+    </h2>
+    <table>
+      <tr>
+        <td> <span class="badge fix">FIX</span></td>
+        <td><p>Fixed typo: sungals 😎</p></td>
+      </tr>
+    </table>
+    <h2 class="log-item">
+      Version 0.1.0+lorem.1
+    </h2>
+    <table>
+      <tr>
+        <td> <span class="badge initial">INITIAL</span></td>
+        <td><p>Initial version</p></td>
+      </tr>
+    </table>
+  </body>
+</html>

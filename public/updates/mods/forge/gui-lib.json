@@ -1,0 +1,10 @@
+{
+    "homepage": "<homepage/download page for your mod>",
+    "1.18.2": {
+      "0.0.1-alpha1": "Initial version"
+    },
+    "promos": {
+      "1.18.2-latest": "0.0.1-alpha1",
+      "1.18.2-recommended": "0.0.1-alpha1"
+    }
+  }

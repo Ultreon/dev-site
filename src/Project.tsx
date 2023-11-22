@@ -16,19 +16,20 @@ function Error(title: string, description: string) {
   )
 }
 
-try {
-  const query: Map<string, string> = new Map(window.location.search.substring(1).split('&').map(it => it.split("=")).map(val => {
-    const a: readonly [string, string] = [val[0], val[1]];
-    return a;
-  }));
+const query: Map<string, string> = new Map(window.location.search.substring(1).split('&').map(it => it.split("=")).map(val => {
+  const a: readonly [string, string] = [val[0], val[1]];
+  return a;
+}));
 
-  const projectId = query.get("id");
+const projectId = query.get("id");
+
+try {
   let project: Project | null = null;
   if (projectId !== undefined) {
-    project = await (await fetch("/data/project/" + projectId + ".json")).json() as Project;
+    project = await (await fetch("./data/project/" + projectId + ".json")).json() as Project;
     project.id = projectId;
     if (project.description !== undefined && project.description) {
-      project.descriptionText = await (await fetch("/data/project/" + projectId + ".html")).text();
+      project.descriptionText = await (await fetch("./data/project/" + projectId + ".html")).text();
     }
   }
 
@@ -39,15 +40,24 @@ try {
       </div>
     );
   }
-} catch (error: any) {
+} catch (error) {
   console.error("Error occurred", error)
-  ProjectPage = function () {
-    return (
-      // <div className="ProjectPage">
-      //   {Error("An Error Occurred", error.toString())}
-      // </div>
-      <></>
-    );
+  if (error.toString() === 'SyntaxError: Unexpected token \'<\', "<!DOCTYPE "... is not valid JSON') {
+    ProjectPage = function () {
+      return (
+        <div className="ProjectPage">
+          {Error("Project not Found!", "Project '" + projectId + "' wasn't found!")}
+        </div>
+      );
+    }
+  } else {
+    ProjectPage = function () {
+      return (
+        <div className="ProjectPage">
+          {Error("An Error Occurred", error.toString())}
+        </div>
+      );
+    }
   }
 }
 

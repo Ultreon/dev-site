@@ -1,7 +1,13 @@
 {
   "name": "ultreon-web",
   "version": "5.0.0",
+  "homepage": "https://ultreon.github.io/dev-site",
   "private": true,
+  "files": [
+    "data/project/*.*",
+    "data/project/**/*.*",
+    "data/**/*.*"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -10,6 +16,7 @@
     "@types/node": "^16.11.21",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "bootstrap-icons": "^1.11.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.19.0",

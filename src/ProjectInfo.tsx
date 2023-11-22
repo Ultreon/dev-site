@@ -12,6 +12,9 @@ export class Project {
     curseforge: string;
     modrinth: string;
     planetMc: string;
+    deprecated: boolean = false;
+    comingSoon: boolean = false;
+    new: boolean = false;
     descriptionText: string;
 
     constructor(id: string, name: string, download: string, background: string = '#303242', description: string = "...") {
@@ -23,8 +26,12 @@ export class Project {
     }
 }
 
-export const PROJECTS: Array<Project> = [
+export class ProjectRef {
+    id: string;
+    name: string;
+    summary: string;
+    category: string;
+    icon: string;
+}
 
-]
-
-PROJECT_JSON as ArrayLike<any>
+export const PROJECTS: Array<ProjectRef> = PROJECT_JSON

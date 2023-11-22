@@ -4,11 +4,14 @@ import BrandIcon from './data/img/ultreon-circle.png'
 function NavMenu() {
   return <div className="NavMenuWrap">
     <nav role="navigation" className="NavMenu w-nav">
-      <a href="/" className="NavLink">
+      <a href="./#" className="NavLink">
         Home
       </a>
-      <a href="/project?id=ultracraft" className="NavLink" rel="noreferrer">
-        Ultracraft
+      <a href="./#mods" className="NavLink" rel="noreferrer">
+        Mods
+      </a>
+      <a href="./#games" className="NavLink" rel="noreferrer">
+        Games
       </a>
     </nav>
     <div className="menu-button NavButton">

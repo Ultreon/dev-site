@@ -4,15 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ProjectPage from './Project';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import { NavBar } from './Nav';
+import { GameListPage } from './GamesListPage';
+import { ModListPage } from './ModListPage';
 
 ReactDOM.render(
   <Router>
       <NavBar />
       <Routes>
-          <Route path='/' element={<App />} />
-          <Route path='/project' element={<ProjectPage />} />
+          <Route path='' element={<App />} />
+          <Route path='project' element={<ProjectPage />} />
+          <Route path='games' element={<GameListPage />} />
+          <Route path='mods' element={<ModListPage />} />
       </Routes>
   </Router>,
   document.getElementById('root')

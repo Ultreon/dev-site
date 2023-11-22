@@ -2,5 +2,6 @@
     "name": "Ultracraft",
     "summary": "A voxel game made in LibGDX and Java!",
     "background": "image",
-    "homepage": "https://ultreon.github.io/ultracraft"
+    "homepage": "https://ultreon.github.io/ultracraft",
+    "comingSoon": true
 }
