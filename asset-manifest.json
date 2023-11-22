@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dev-site/static/css/main.dcc0e576.css",
-    "main.js": "/dev-site/static/js/main.af221ce2.js",
-    "static/js/787.6d25b8a9.chunk.js": "/dev-site/static/js/787.6d25b8a9.chunk.js",
+    "main.js": "/dev-site/static/js/main.aaa0829d.js",
+    "static/js/787.a3954c79.chunk.js": "/dev-site/static/js/787.a3954c79.chunk.js",
     "static/media/error.jpg": "/dev-site/static/media/error.f0090adb30430b02b1a8.jpg",
     "static/media/ultreon-circle.png": "/dev-site/static/media/ultreon-circle.8be53f914c5e22dbe65a.png",
     "static/media/bootstrap-icons.woff?": "/dev-site/static/media/bootstrap-icons.66b7720f4a230f1b0341.woff",
@@ -11,11 +11,11 @@
     "static/media/Quantum.otf": "/dev-site/static/media/Quantum.2cf9e1c7fad59d223171.otf",
     "index.html": "/dev-site/index.html",
     "main.dcc0e576.css.map": "/dev-site/static/css/main.dcc0e576.css.map",
-    "main.af221ce2.js.map": "/dev-site/static/js/main.af221ce2.js.map",
-    "787.6d25b8a9.chunk.js.map": "/dev-site/static/js/787.6d25b8a9.chunk.js.map"
+    "main.aaa0829d.js.map": "/dev-site/static/js/main.aaa0829d.js.map",
+    "787.a3954c79.chunk.js.map": "/dev-site/static/js/787.a3954c79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dcc0e576.css",
-    "static/js/main.af221ce2.js"
+    "static/js/main.aaa0829d.js"
   ]
 }

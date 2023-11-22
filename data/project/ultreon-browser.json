@@ -1,0 +1,6 @@
+{
+    "name": "Ultreon Browser",
+    "summary": "A simple webbrowser made in Kotlin using JCEF.",
+    "background": "linear-gradient(0deg, #ffaa00, #ffdd4d)",
+    "downloads": "https://github.com/Ultreon/ultreon-browser/releases/latest"
+}
