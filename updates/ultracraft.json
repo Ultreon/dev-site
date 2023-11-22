@@ -1,0 +1,26 @@
+{
+  "versions": {
+    "0.0.0-test.1": {
+      "name": "Test Release 1",
+      "type": "Indev",
+      "stable": false,
+      "preRelease": false,
+      "release": false,
+      "test": true,
+      "runtime": {
+        "type": "JavaJDK",
+        "version": 17
+      },
+      "version": {
+        "version": 0,
+        "release": 0,
+        "build": 0
+      },
+      "buildDate": "2022-05-04 12:56",
+      "download": "https://ultreon.github.io/cdn/ultracraft/package.zip",
+      "args": [
+
+      ]
+    }
+  }
+}

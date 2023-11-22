@@ -1,0 +1,70 @@
+[
+    {
+        "id": "devices-mod",
+        "name": "Devices Mod",
+        "summary": "A Minecraft mod that adds working electronic devices.",
+        "category": "mods",
+        "game": "minecraft"
+    },
+    {
+        "id": "advanced-debug",
+        "name": "Advanced Debug",
+        "summary": "Advanced debug utilities and information for Minecraft.",
+        "category": "mods",
+        "game": "minecraft"
+    },
+    {
+        "id": "exit-confirmation",
+        "name": "Exit Confirmation",
+        "summary": "Shows an exit confirmation screen when trying to close Minecraft.",
+        "category": "mods",
+        "game": "minecraft"
+    },
+    {
+        "id": "small-utils",
+        "name": "Small Utilities",
+        "summary": "Adding functional/decorational blocks to your Minecraft world.",
+        "category": "mods",
+        "game": "minecraft"
+    },
+    {
+        "id": "dark-server-console",
+        "name": "Dark Server Console",
+        "summary": "A mod that themes Minecraft's Dedicated server console.",
+        "category": "mods",
+        "game": "minecraft"
+    },
+    {
+        "id": "random-thingz",
+        "name": "Random Thingz",
+        "summary": "Probably just another random things mod for Minecraft.",
+        "category": "mods",
+        "game": "minecraft"
+    },
+    {
+        "id": "uc-networking",
+        "name": "Ultracraft Networking",
+        "summary": "An Ultracraft mod adding improved networking API for mods.",
+        "category": "mods",
+        "game": "ultracraft"
+    },
+
+    {
+        "id": "game-launcher",
+        "name": "Ultreon Game Launcher",
+        "summary": "Launcher for games made by Ultreon",
+        "category": "games"
+    },
+    {
+        "id": "ultracraft",
+        "name": "Ultracraft",
+        "summary": "A WIP voxel game aiming to do things differently.",
+        "category": "games"
+    },
+    {
+        "id": "bubble-blaster",
+        "name": "Bubble Blaster 2",
+        "summary": "A bubble game taken to the next level.",
+        "category": "games"
+    }
+]

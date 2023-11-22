@@ -1,0 +1,7 @@
+{
+    "name": "Exit Confirmation",
+    "summary": "Shows an exit confirmation screen when trying to close Minecraft.",
+    "background": "#853",
+    "curseforge": "https://curseforge.com/minecraft/mc-mods/exit-confirmation",
+    "modrinth": "https://modrinth.com/mod/exit-confirmation"
+}
