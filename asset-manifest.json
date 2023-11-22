@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/dev-site/static/css/main.2949bfc9.css",
-    "main.js": "/dev-site/static/js/main.a1132117.js",
+    "main.css": "/dev-site/static/css/main.d9d0feb6.css",
+    "main.js": "/dev-site/static/js/main.691f3392.js",
     "static/js/787.6d25b8a9.chunk.js": "/dev-site/static/js/787.6d25b8a9.chunk.js",
     "static/media/error.jpg": "/dev-site/static/media/error.f0090adb30430b02b1a8.jpg",
     "static/media/ultreon-circle.png": "/dev-site/static/media/ultreon-circle.8be53f914c5e22dbe65a.png",
     "static/media/Fipps-Regular.otf": "/dev-site/static/media/Fipps-Regular.03d277fc2c330359cf58.otf",
     "static/media/Quantum.otf": "/dev-site/static/media/Quantum.2cf9e1c7fad59d223171.otf",
     "index.html": "/dev-site/index.html",
-    "main.2949bfc9.css.map": "/dev-site/static/css/main.2949bfc9.css.map",
-    "main.a1132117.js.map": "/dev-site/static/js/main.a1132117.js.map",
+    "main.d9d0feb6.css.map": "/dev-site/static/css/main.d9d0feb6.css.map",
+    "main.691f3392.js.map": "/dev-site/static/js/main.691f3392.js.map",
     "787.6d25b8a9.chunk.js.map": "/dev-site/static/js/787.6d25b8a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2949bfc9.css",
-    "static/js/main.a1132117.js"
+    "static/css/main.d9d0feb6.css",
+    "static/js/main.691f3392.js"
   ]
 }

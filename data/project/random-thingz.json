@@ -4,5 +4,6 @@
     "background": "image",
     "curseforge": "https://curseforge.com/minecraft/mc-mods/random-thingz",
     "planetMc": "https://www.planetminecraft.com/mod/qforgemod/",
-    "description": true
+    "description": true,
+    "deprecated": true
 }
