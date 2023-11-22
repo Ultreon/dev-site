@@ -4,7 +4,7 @@ import './Head.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { ProjectList } from "./ProjectList";
 
-type PageType = Project | 'games' | 'mods' | null;
+type PageType = Project | 'games' | 'mods' | 'misc' | null;
 
 function HomePageButton(project: PageType) {
   if (project instanceof Object && project.homepage !== undefined) {
@@ -67,6 +67,20 @@ function SourceCodeButton(project: PageType) {
     return (
       <a href={project.sourceCode} className="StartButton">
         Source Code
+      </a>
+    )
+  } else {
+    return (
+      <></>
+    )
+  }
+}
+
+function DownloadsButton(project: PageType) {
+  if (project instanceof Object && project.downloads !== undefined) {
+    return (
+      <a href={project.downloads} className="StartButton">
+        Downloads
       </a>
     )
   } else {
@@ -171,6 +185,11 @@ export function Head(project: PageType) {
     projectName = "Mod List"
     projectDescription = "List of all mods made by Ultreon."
   }
+  if (project === 'misc') {
+    style.background = '#303242'
+    projectName = "Other Projects List"
+    projectDescription = "List of miscelaneous projects made by Ultreon."
+  }
   if (project === undefined) {
     style.background = 'crimson'
     projectName = "Error"
@@ -214,6 +233,7 @@ export function Head(project: PageType) {
             {project === null ? RootButtons() : <></>}
             {HomePageButton(project)}
             {SourceCodeButton(project)}
+            {DownloadsButton(project)}
             {CurseForgeButton(project)}
             {ModrinthButton(project)}
             {PlanetMcButton(project)}
@@ -223,6 +243,7 @@ export function Head(project: PageType) {
       {Description(project)}
       {project === 'games' ? ProjectList(project) : <></>}
       {project === 'mods' ? ProjectList(project) : <></>}
+      {project === 'misc' ? ProjectList(project) : <></>}
     </>
   );
 }

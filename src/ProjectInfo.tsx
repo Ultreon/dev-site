@@ -4,26 +4,18 @@ export class Project {
     id: string;
     name: string;
     summary: string;
-    download: string;
     background: string;
     description: boolean;
     homepage: string;
     sourceCode: string;
     curseforge: string;
+    downloads: string;
     modrinth: string;
     planetMc: string;
     deprecated: boolean = false;
     comingSoon: boolean = false;
     new: boolean = false;
     descriptionText: string;
-
-    constructor(id: string, name: string, download: string, background: string = '#303242', description: string = "...") {
-        this.id = id;
-        this.name = name;
-        this.download = download;
-        this.background = background;
-        this.summary = description
-    }
 }
 
 export class ProjectRef {

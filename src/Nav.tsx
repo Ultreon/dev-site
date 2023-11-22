@@ -13,6 +13,9 @@ function NavMenu() {
       <a href="./#games" className="NavLink" rel="noreferrer">
         Games
       </a>
+      <a href="./#misc" className="NavLink" rel="noreferrer">
+        Misc.
+      </a>
     </nav>
     <div className="menu-button NavButton">
       <div className="menu-icon w-icon-nav-menu">

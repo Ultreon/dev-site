@@ -8,6 +8,7 @@ import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import { NavBar } from './Nav';
 import { GameListPage } from './GamesListPage';
 import { ModListPage } from './ModListPage';
+import { MiscListPage } from './MiscListPage';
 
 ReactDOM.render(
   <Router>
@@ -17,6 +18,7 @@ ReactDOM.render(
           <Route path='project' element={<ProjectPage />} />
           <Route path='games' element={<GameListPage />} />
           <Route path='mods' element={<ModListPage />} />
+          <Route path='misc' element={<MiscListPage />} />
       </Routes>
   </Router>,
   document.getElementById('root')
