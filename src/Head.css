@@ -1,0 +1,111 @@
+.Head {
+    position: relative;
+}
+
+#Start {
+    height: calc(100vh);
+    padding-left: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fffa;
+    z-index: 10;
+    box-shadow: 0 0 32px 0 #0007;
+}
+
+#Start .ProjectTitle {
+    color: #fff;
+    font-size: 5em;
+    margin-bottom: 0.2em;
+    text-shadow: 0 0 48px #000e;
+}
+
+#Start .StartSubHead {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 0 32px #000e;
+}
+
+.StartButton {
+    color: #000;
+    display: inline;
+    background: #fff8;
+    backdrop-filter: blur(24px);
+    padding: 16px 24px;
+    border-radius: 8px;
+    margin-right: 8px;
+    text-decoration: none;
+    z-index: 1;
+    box-sizing: content-box;
+    user-select: none;
+}
+
+.StartButton:hover {
+    background: #fff;
+}
+
+#ProjectDescription {
+    padding-top: 64px;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    background-color: #222;
+    overflow: hidden;
+    margin: 0;
+}
+
+#ProjectDescription a {
+    text-underline-offset: 4px;
+    color: #fff7;
+}
+
+#ProjectDescription a:hover {
+    text-underline-offset: 4px;
+    color: #fff;
+}
+
+#ProjectDescription pre, #ProjectDescription code {
+    padding: 4px 8px;
+    margin: 0.2em;
+    background-color: #444;
+    border-radius: 8px;
+}
+
+#ProjectDescription pre {
+    padding: 4px 8px;
+    background-color: #444;
+    max-width: 70%;
+}
+
+#ProjectDescription img {
+    border-radius: 12px;
+    margin: 2px;
+    box-shadow: 0 32px 32px -32px #0008;
+    outline: solid 4px #fff0;
+}
+
+#ProjectDescription .carousel img {
+    border-radius: 0;
+    margin: 0;
+}
+
+#ProjectDescription img:hover {
+    outline: solid 4px #fff4;
+}
+
+#ProjectDescription hr {
+    width: 80%;
+    border-color: #fff4;
+    border-width: 1.5px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    background-color: transparent;
+    display: block;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: solid;
+    box-shadow: 0 8px 12px 1px #0004;
+}
